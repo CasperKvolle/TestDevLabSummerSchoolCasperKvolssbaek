@@ -4,7 +4,8 @@
   "description": "Automation project",
   "main": "conditonals.js",
   "scripts": {
-    "test": "npx prettier . --write"
+    "test": "npx prettier . --write",
+    "cypress-open": "npx cypress open"
   },
   "author": "",
   "license": "ISC",

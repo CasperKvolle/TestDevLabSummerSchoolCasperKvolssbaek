@@ -23,3 +23,6 @@ function IsSunny(isSunny) {
 console.log(IsSunny(false));
 
 // const wheatherMesagge = isSunny ? 'Grab sunglasses!' : ' Stay home';
+/* 
+this is a comment
+*/

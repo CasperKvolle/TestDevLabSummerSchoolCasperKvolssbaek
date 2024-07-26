@@ -1,7 +1,14 @@
-let age = 22
+let age = 22;
 
-const name = 'Casper'
+const name = "Casper";
 
-let active = true
+let active = true;
 
-console.log('My name is : ' + name +  ' and age is ' + age + 'Is Active - True or false: ' +  active )
+console.log(
+  "My name is : " +
+    name +
+    " and age is " +
+    age +
+    "Is Active - True or false: " +
+    active,
+);

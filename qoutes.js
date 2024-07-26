@@ -5,6 +5,4 @@ console.log('Some tic')
 let Myname = 'Casper'
 
 console.log("My name is " + Myname)
-
-
-
+console.log('Test from anaconda')

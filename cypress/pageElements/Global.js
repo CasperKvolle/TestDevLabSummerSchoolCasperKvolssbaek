@@ -2,17 +2,19 @@
 
 class Global {
     elements = { 
-        sideBarBurger: () => cy.getBytestId('nav-menu-buttom'),
-        sidebarLink : (pageName) => 
-            cy.getBytestId('nav-menu-popup').contains('a', pageName),
-
+        sideBarBurger: () => cy.getByTestId('nav-menu-button'),
+        sideBarLinks : (pageName) => 
+            cy.getByTestId('nav-menu-popup'),
+        // Buttons in dashboard
+        homeButton: () => cy.getByTestId('home-link').click(),  
+        storeButton: () => cy.getByTestId('store-link').click(),  
+        signOutButton: () => cy.getByTestId('logout-button').click(),         
     };
     navigateSideBar = {
         openPage: (pageName) => {
-            this.elements.sideBarBurger.click();
-            this.elements.sideBarLinks(pageName);
+            this.elements.sideBarBurger();
+            this.elements.sideBarLinks(pageName).click();
         }
     }
 }
-
 export default new Global();

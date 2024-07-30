@@ -12,3 +12,9 @@ This project uses 'Prettier' package to format the code. Run the following comma
 readme
 
 
+To run the test :
+from cmd : 
+ npm run cypress-open
+ 
+
+

@@ -20,8 +20,8 @@ it('log in to the webstore - Succesful', () => {
 
     //Single Product  -- in our scenario Coffee mug if else sentence for rest?
 
-    // ProductInforPage.elements.headerLink()
-    // ProductInforPage.elements.breadcrumb()
+    ProductInforPage.elements.headerLink()
+    ProductInforPage.elements.breadcrumb()
     // ProductInforPage.elements.productTitle()
 
 
@@ -48,6 +48,6 @@ it('log in to the webstore - Succesful', () => {
       //#endregion
     
 
-    // cy.dashboard_home() 
+    cy.dashboard_home() 
     cy.dashboard_logout()   
 });

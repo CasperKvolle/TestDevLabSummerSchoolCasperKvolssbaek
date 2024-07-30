@@ -4,11 +4,16 @@ class Global {
     elements = { 
         sideBarBurger: () => cy.getByTestId('nav-menu-button'),
         sideBarLinks : (pageName) => 
-            cy.getByTestId('nav-menu-popup'),
-        // Buttons in dashboard
-        homeButton: () => cy.getByTestId('home-link').click(),  
+         cy.getByTestId('nav-menu-popup'),
+        // Buttons in dashboard //cy.get('[data-testid="nav-account-link"] > .rounded-x > .aspect-square')
+        accountIcon: () => cy.getByTestId('nav-account-link').click(),
+        homeButton: () => cy.getByTestId('home-link').click(),         
+        cartButton: () => cy.getByTestId('cart-link').click(),
         storeButton: () => cy.getByTestId('store-link').click(),  
-        signOutButton: () => cy.getByTestId('logout-button').click(),         
+        signOutButton: () => cy.getByTestId('logout-button').click(),   
+        
+        ///Clean basket before shopping
+        
     };
     navigateSideBar = {
         openPage: (pageName) => {

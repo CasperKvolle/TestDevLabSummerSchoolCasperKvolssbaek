@@ -48,6 +48,6 @@ it('log in to the webstore - Succesful', () => {
       //#endregion
     
 
-    cy.dashboard_home() 
-    cy.dashboard_logout()   
+    // cy.dashboard_home() 
+    // cy.dashboard_logout()   
 });

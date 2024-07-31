@@ -5,7 +5,7 @@ class Global {
         sideBarBurger: () => cy.getByTestId('nav-menu-button'),
         sideBarLinks : (pageName) => 
          cy.getByTestId('nav-menu-popup'),
-        // Buttons in dashboard //cy.get('[data-testid="nav-account-link"] > .rounded-x > .aspect-square')
+        // Buttons in dashboard
         accountIcon: () => cy.getByTestId('nav-account-link').click(),
         homeButton: () => cy.getByTestId('home-link').click(),         
         cartButton: () => cy.getByTestId('cart-link').click(),

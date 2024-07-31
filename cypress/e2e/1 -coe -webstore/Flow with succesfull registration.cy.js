@@ -12,7 +12,7 @@ it('log in to the webstore - and delete user with email casper@kvolle.com', () =
     const firstName = 'Casper';
     const lastname = 'Langkilde';
     
-    cy.reg_new_user(firstName, lastname, email, password)
+    cy.regNewUser(firstName, lastname, email, password)
 
     cy.dashboard_profile()
     Account.elements.profile

@@ -12,7 +12,7 @@ Cypress.Commands.add('login', (email, password) => {
     Login.elements.signInButton();
     Home.elements.headerLink(); 
 })
-Cypress.Commands.add('reg_new_user', (firstName, lastname, email, password) => {
+Cypress.Commands.add('regNewUser', (firstName, lastname, email, password) => {
     cy.visit('/'); 
     cy.get('[data-testid="register-button"]').click()
     Registration.elements.firstNameInput().type(firstName);
@@ -20,7 +20,6 @@ Cypress.Commands.add('reg_new_user', (firstName, lastname, email, password) => {
     Registration.elements.emailInput().type(email);
     Registration.elements.passwordInput().type(password);
     Registration.elements.CreateUser_JoinButton();
-
 })
 
 //Dashboard Home
@@ -56,6 +55,10 @@ Cypress.Commands.add('clean_Basket', () => {
 // -- Scroll to Button of Page --
 Cypress.Commands.add('ScrollToButtomOfPage', () => {
     cy.scrollTo('bottom');
+});
+// -- Scroll to Button of Page --
+Cypress.Commands.add('ScrollToTopOfPage', () => {
+    cy.scrollTo('top');
 });
 // -- This is a dual command --
 Cypress.Commands.add('getByTestId', (id) => {

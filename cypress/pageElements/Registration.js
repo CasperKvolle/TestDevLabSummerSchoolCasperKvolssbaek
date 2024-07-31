@@ -1,5 +1,5 @@
 import Global from "./Global";
-//cy.reg_new_user(firstName, lastname, email, password)
+//cy.regNewUser(firstName, lastname, email, password)
 class Registration {
     elements = { 
         firstNameInput: () => cy.getByTestId('first-name-input').should('be.visible'),

@@ -12,7 +12,7 @@ jobs:
           CYPRESS_PASSWORD: ${{ secrets.LARGE_SECRET_PASSPHRASE }}
         with:
           install: true
-          command: npm run cypress run
+          command: npx cypress run
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.4
         with:

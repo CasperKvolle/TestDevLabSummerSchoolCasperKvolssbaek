@@ -13,3 +13,8 @@ readme
 To run the test :
 from cmd :
 npm run cypress-open
+
+https://www.npmjs.com/package/mochawesome
+
+Running in headless mode
+-npx cypress run

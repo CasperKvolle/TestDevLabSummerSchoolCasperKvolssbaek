@@ -98,6 +98,7 @@ describe("Flow - creating a user and placinging an order in shop.", () => {
 
     cy.ScrollToTopOfPage();
     ConfirmedOrder.elements.headerLink();
+
     ConfirmedOrder.elements.Validate_UserEmail(email);
 
     ///Log Out

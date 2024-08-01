@@ -2,9 +2,19 @@
 
 ## npm script
 
-### Code formatting 
+### Code formatting
 
 This project uses 'Prettier' package to format the code. Run the following command to format all files:
 
-
 'npm run format'
+
+readme
+
+To run the test :
+from cmd :
+npm run cypress-open
+
+https://www.npmjs.com/package/mochawesome
+
+Running in headless mode
+-npx cypress run

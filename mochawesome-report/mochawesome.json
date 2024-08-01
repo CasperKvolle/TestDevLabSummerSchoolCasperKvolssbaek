@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-01T08:46:32.365Z",
+    "end": "2024-08-01T08:46:41.721Z",
+    "duration": 9356,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d9940841-3b01-4505-b965-fd0d304115b8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1 -coe -webstore\\Flow with succesfull registration.cy.js",
+      "file": "cypress\\e2e\\1 -coe -webstore\\Flow with succesfull registration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "log in to the webstore - and delete user with email casper@kvolle.com",
+          "fullTitle": "log in to the webstore - and delete user with email casper@kvolle.com",
+          "timedOut": null,
+          "duration": 9102,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "const uuid = () => Cypress._.random(0, 1e6);\nconst id = uuid();\nconst email = `testname${id}` + \"@test99.com\";\n// const email = 'testname${id}@test99.com';\nconst password = \"Denver2341!!\";\nconst firstName = \"Casper\";\nconst lastname = \"Langkilde\";\ncy.regNewUser(firstName, lastname, email, password);\ncy.dashboard_profile();\n_Account.default.elements.profile;\n_Account.default.elements.profile_click();\ncy.ScrollToButtomOfPage();\n_Account.default.elements.profile_delete_click();\n//Pop delete\n_Account.default.elements.profile_delete_popup_visible();\n_Account.default.elements.profile_delete_popup_click();\n//Verify that user is deleted\ncy.login(email, password);",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `h1`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `h1`, but never found it.\n    at Context.eval (webpack://cypress/./cypress/support/commands.js:8:15)",
+            "diff": null
+          },
+          "uuid": "9dc33c59-b477-4538-aee9-4c744264c4fc",
+          "parentUUID": "d9940841-3b01-4505-b965-fd0d304115b8",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "9dc33c59-b477-4538-aee9-4c744264c4fc"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 9102,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

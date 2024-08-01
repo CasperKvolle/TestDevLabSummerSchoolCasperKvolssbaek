@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx prettier . --write",
     "cypress-open": "npx prettier . --write && npx cypress open",
-    "cypress-run": "npx cypress-run",
+    "cypress-run": "npx cypress run",
     "reports-cleanup": "rm -r./mochawesome-report"
   },
   "author": "",
